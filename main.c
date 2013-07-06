@@ -5,6 +5,7 @@
 int main(int argc,char ** argv){
 	if(argc!=3){
 		puts("Usage: in out");
+		return 1;
 	}
 	FILE*fi,*fo;
 	fi=fopen(argv[1],"rb");
